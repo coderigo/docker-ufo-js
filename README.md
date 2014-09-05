@@ -12,11 +12,11 @@ This was all set up on *OS X*, so it assumes you have followed the [docker OS X 
 To download the image and start a container from the image
 
 ```bash
-docker pull docker-ufo-js
+docker pull coderigo/docker-ufo-js
 # NOTE: The below command is designed for *OS X* running boot2docker which itself is a VM running on IP address 
 # 192.168.59.103 by default (run boot2docker IP to see it for yourself). If running on other OSes you'll likely 
 # substitute `192.168.59.103:49159` out for your localhost `127.0.0.1:9000`:
-docker run -p 192.168.59.103:49159:9000 --name="ufo-js-server" --hostname="ufo-js-server" -i -t docker-ufo-js /bin/zsh
+docker run -p 192.168.59.103:49159:9000 --name="ufo-js-server" --hostname="ufo-js-server" -i -t coderigo/docker-ufo-js /bin/zsh
 ```
 
 The above will start an interactive shell into the container. To start the server, type into the shell:
